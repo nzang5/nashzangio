@@ -1,30 +1,6 @@
-/*
-0 - 600px:      Phone
-600 - 900px:    Tablet portrait
-900 - 1200px:   Tablet landscape
-[1200 - 1800] is where our normal styles apply
-1800px + :      Big desktop
-$breakpoint arguement choices:
-- phone
-- tab-port
-- tab-land
-- big-desktop
-
-Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only inside media queries
-
-WHY DOES NESTING CSS CLASSES WORK HERE??????
-
-*/
 
 * {
   --n-blue: 0, 98, 185;
-  --blue: rgba(49, 159, 88, 0.31);
-  --red: red;
-  --purple: rgba(143, 162, 255, 0.8);
-  --green: rgba(31, 79, 45, 0.8);
-  --light-green: rgba(101, 146, 74, 0.8);
-  --brown: rgba(129, 104, 8, 0.8);
-  --light-brown: rgba(186, 155, 65, 0.8);
   --main-color:  var(--n-blue);
 }
 *,
@@ -494,10 +470,13 @@ textarea {
     font-weight: 700;
     letter-spacing: 1px; }
   .header__links {
-    display: flex; }
+    display: flex; 
+  }
+ 
     @media only screen and (max-width: 37.5em) {
       .header__links {
         display: none; } }
+  
   .header__link {
     padding: 2.2rem 3rem;
     display: inline-block;
@@ -508,7 +487,8 @@ textarea {
     font-weight: 700;
     transition: color .3s; }
     .header__link:hover {
-      color: rgba(var(--main-color), 1); }
+      color: rgba(var(--main-color), 4);
+     }
     @media only screen and (max-width: 56.25em) {
       .header__link {
         padding: 3rem 1.8rem;
