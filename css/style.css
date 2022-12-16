@@ -314,6 +314,7 @@ textarea {
   .projects__row:last-child {
     margin-bottom: 0; }
   .projects__row-img-cont {
+    border-radius: 5px;
     overflow: hidden; }
   .projects__row-img {
     width: 100%;
