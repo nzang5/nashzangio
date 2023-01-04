@@ -41,6 +41,12 @@ a {
 li {
   list-style: none; }
 
+.inprogress{
+  color: red;
+  font-size: 2rem;
+  font-weight: bold;
+}  
+
 input:focus,
 button:focus,
 a:focus,
